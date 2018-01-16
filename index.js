@@ -1,7 +1,7 @@
 const TeleBot = require('telebot');
 const bot = new TeleBot('547814548:AAHTmQHNMzDxNPGHb0q4Z2wsLI-eiavtbHY');
 
-bot.on('text', (msg) => msg.reply.text(msg.text));
+//bot.on('text', (msg) => msg.reply.text(msg.text));
 bot.on('photo', (msg) => msg.reply.text('nice pic ' + msg.from.first_name));
 
 bot.start();
