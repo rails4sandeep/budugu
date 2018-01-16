@@ -1,0 +1,24 @@
+{
+  "name": "budugu",
+  "version": "1.0.0",
+  "description": "a group monitoring bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "bot",
+    "telegram",
+    "groups"
+  ],
+  "author": "Sandeep Kumar Uppuluri <rails4sandeep@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "telebot": "^1.2.3"
+  },
+  "engines": {
+    "node": "8.9.0"
+  }
+}
