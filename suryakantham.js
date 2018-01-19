@@ -6,14 +6,14 @@ let goodWordFlag = true;
 let badWordFlag = true;
 bot.on('text', (msg) => {
     bannedWords.forEach((badWord) => {
-        if(msg.text.includes(badWord) && badWordFlag) {
+        if(msg.text.toLowerCase().includes(badWord) && badWordFlag) {
             msg.reply.text('Your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums free of politics & abuse. Thank you');
             badWordFlag = false;
         }
     });
     
     favoriteWords.forEach((goodWord) => {
-        if(msg.text.includes(goodWord) && goodWordFlag) {
+        if(msg.text.toLowerCase().includes(goodWord) && goodWordFlag) {
             msg.reply.text('Thanks for sharing this opportunity with MANAM community!');
             goodWordFlag = false;            
         }
