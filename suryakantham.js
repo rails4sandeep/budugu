@@ -14,7 +14,7 @@ bot.on('text', (msg) => {
     
     favoriteWords.forEach((goodWord) => {
         if(msg.text.toLowerCase().includes(goodWord) && goodWordFlag) {
-            msg.reply.text('Thanks for sharing this opportunity with MANAM community!');
+            msg.reply.text("👍");
             goodWordFlag = false;            
         }
     });
