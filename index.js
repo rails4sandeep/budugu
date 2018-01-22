@@ -4,7 +4,7 @@ const bot = new TeleBot('547814548:AAHTmQHNMzDxNPGHb0q4Z2wsLI-eiavtbHY');
 //bot.on('text', (msg) => msg.reply.text(msg.text));
 
 bot.on('text', (msg) => {
-    if(msg.text.toLowerCase.includes('budugu')) {
+    if(msg.text.toLowerCase().includes('budugu')) {
         msg.reply.text('thank you andi');
     }
 });
