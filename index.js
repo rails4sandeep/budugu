@@ -9,7 +9,7 @@ bot.on('text', (msg) => {
     }
 });
 
-bot.on('photo', (msg) => msg.reply.text('nice pic ' + msg.from.first_name));
+bot.on('photo', (msg) => msg.reply.text('good one ' + msg.from.first_name + ' garu'));
 
 bot.start();
 
