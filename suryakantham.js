@@ -7,7 +7,7 @@ let badWordFlag = true;
 bot.on('text', (msg) => {
     bannedWords.forEach((badWord) => {
         if(msg.text.toLowerCase().includes(badWord) && badWordFlag) {
-            msg.reply.text('Your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums free of politics & abuse. Thank you');
+            msg.reply.text('Your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums free of politics & clean. Thank you');
             badWordFlag = false;
         }
     });
@@ -25,7 +25,7 @@ bot.on('text', (msg) => {
 bot.start();
 
 bot.on('/cheppandi', (msg) => {
-    msg.reply.text('Your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums free of politics & abuse. Thank you');
+    msg.reply.text('Your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums free of politics & clean. Thank you');
   });
 
 
