@@ -25,7 +25,7 @@ bot.on('text', (msg) => {
 bot.start();
 
 bot.on('cheppandi', (msg) => {
-    msg.reply.text('Your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums free of politics & clean. Thank you');
+    msg.reply.text('cheppadaniki emi ledu pani chusukondi');
   });
 
   bot.on('/evarumeeru', (msg) => {
