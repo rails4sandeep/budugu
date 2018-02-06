@@ -22,6 +22,12 @@ bot.on('text', (msg) => {
             goodWordFlag = false;            
         }
     });
+
+    if(msg.text.toLowerCase().includes('Manam Sankranti Sambaraalu')) {
+        msg.reply.text('Manam Sankranti Sambaraalu 28 Jan 2018 Redum Centre Wentworthville lo jarigayi. Photolu ivigo' +
+         'https://photos.app.goo.gl/jR4VPkeGgVXoPiON2');
+    }
+
     goodWordFlag = true;
     badWordFlag = true;
 });
