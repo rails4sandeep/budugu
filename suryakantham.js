@@ -30,7 +30,7 @@ bot.on('/evarumeeru', (msg) => {
 //methods
 let cheppandi = (msg) => {
     if(msg.text.toLowerCase().includes('cheppandi')) {
-        msg.reply.text('cheppadaniki emi ledu pani chusukondi');
+        msg.reply.text('ఆస్తి నాది!');
     }
 };  
 
