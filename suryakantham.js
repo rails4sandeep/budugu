@@ -28,13 +28,13 @@ bot.on('/evarumeeru', (msg) => {
 
 
 //methods
-var cheppandi = (msg) => {
+let cheppandi = (msg) => {
     if(msg.text.toLowerCase().includes('cheppandi')) {
         msg.reply.text('cheppadaniki emi ledu pani chusukondi');
     }
 };  
 
-var bannedWordsWarning = (msg, bannedWords) => {
+let bannedWordsWarning = (msg, bannedWords) => {
     bannedWords.forEach((badWord) => {
         if(msg.text.toLowerCase().includes(badWord) && badWordFlag) {
             msg.reply.text('Your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums free of politics & clean. Thank you');
@@ -43,7 +43,7 @@ var bannedWordsWarning = (msg, bannedWords) => {
     });
 };
 
-var goodWordsAppreciation = (msg, favoriteWords) => {
+let goodWordsAppreciation = (msg, favoriteWords) => {
     favoriteWords.forEach((goodWord) => {
         if(msg.text.toLowerCase().includes(goodWord) && goodWordFlag) {
             msg.reply.text("👍");
@@ -52,14 +52,14 @@ var goodWordsAppreciation = (msg, favoriteWords) => {
     });
 };
 
-var sankrantiSpecial = (msg) => {
+let sankrantiSpecial = (msg) => {
     if(msg.text.toLowerCase().includes('manam sankranti sambaraalu')) {
         msg.reply.text('Manam Sankranti Sambaraalu 28 Jan 2018 Redum Centre Wentworthville lo jarigayi. Photolu ivigo' +
          'https://photos.app.goo.gl/jR4VPkeGgVXoPiON2');
     }
 };
 
-var aboutMe = (msg) => {
+let aboutMe = (msg) => {
     msg.reply.text('I am the official moderator of MANAM telegram group. I will take care of the group. I appreciate good posts & inform when posts are in violation of MANAM policies');
 };
 

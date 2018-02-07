@@ -11,13 +11,13 @@ bot.start();
 
 bot.on('newChatMembers', (msg) => newChatMembers(msg));
 
-var budugu = (msg) => {
+let budugu = (msg) => {
     if(msg.text.toLowerCase().includes('budugu')) {
         msg.reply.text('thank you andi');
     }
 };
 
-var photo = (msg) => {
+let photo = (msg) => {
     msg.reply.text('good one ' + msg.from.first_name + ' garu');
 };
 
