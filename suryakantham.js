@@ -1,7 +1,7 @@
 //declarations
 const TeleBot = require('telebot');
 const bot = new TeleBot('535241451:AAFdc2dpzWl9Q0rlEuRamlCwxOuvbbmlI20');
-const bannedWords = ['fuck','asshole','ysr','jagan','chandrababu','chandrababu naidu','chandra babu naidu','lokesh','tdp','kcr','ktr','trs','free voucher','freevoucher','rajasekhar reddy','చంద్రబాబు'];
+const bannedWords = ['fuck','asshole','ysr','jagan','chandrababu','chandrababu naidu','chandra babu naidu','lokesh','tdp','kcr','ktr','trs','free voucher','freevoucher','rajasekhar reddy','చంద్రబాబు','rahul gandhi', 'bjp', 'congress'];
 const favoriteWords = ['opportunity','openings','job','jobs','opening','role','roles','thank'];
 let goodWordFlag = true;
 let badWordFlag = true;
