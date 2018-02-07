@@ -21,6 +21,6 @@ let photo = (msg) => {
     msg.reply.text('good one ' + msg.from.first_name + ' garu');
 };
 
-var newChatMembers = (msg) => {
+let newChatMembers = (msg) => {
     msg.reply.text('Welcome '  + msg.new_chat_members[0].first_name + ' to MANAM - Mana Australia Telugu Association. Please share a small introduction about you to the group. You can find more information about MANAM at www.manam-au.org');
 };
