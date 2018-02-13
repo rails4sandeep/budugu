@@ -30,7 +30,7 @@ bot.on('/evarumeeru', (msg) => {
 //methods
 let cheppandi = (msg) => {
     if(msg.text.toLowerCase().includes('cheppandi')) {
-        msg.reply.text('ఆస్తి నాది!');
+        msg.reply.text('వాలెంటైన్స్ డే అని ఇంకోటని రోడ్ల వెంట పార్కుల వెంట పడి తిరిగారు అంటే కాళ్ళు విరగ్గొడతా!');
     }
 };  
 
