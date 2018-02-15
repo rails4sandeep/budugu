@@ -3,7 +3,7 @@ const TeleBot = require('telebot');
 const bot = new TeleBot('535241451:AAFdc2dpzWl9Q0rlEuRamlCwxOuvbbmlI20');
 const bannedWords = ['fuck','asshole','ysr','jagan','chandrababu','chandrababu naidu','chandra babu naidu','lokesh','tdp','kcr','ktr','trs','free voucher','freevoucher','rajasekhar reddy','చంద్రబాబు','rahul gandhi', 'bjp', 'congress'];
 const favoriteWords = ['opportunity','openings','job','jobs','opening','role','roles','thank'];
-const visasAdwords = ['migration','pr','457','work visa','permanent residency','189','190','student visa','temporary residency'];
+const visasAdwords = ['migration','457','work visa','permanent residency','189','190','student visa','temporary residency'];
 let goodWordFlag = true;
 let badWordFlag = true;
 let visasAdwordsFlag = true;
@@ -38,7 +38,8 @@ let cheppandi = (msg) => {
 let bannedWordsWarning = (msg, bannedWords) => {
     bannedWords.forEach((badWord) => {
         if(msg.text.toLowerCase().includes(badWord) && badWordFlag) {
-            msg.reply.text('Your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums free of politics & clean. Thank you');
+            msg.reply.text('Hi ' + msg.from.first_name + ' garu, your message might be in violation of the MANAM rules & regulations. MANAM wishes to keep its forums clean & free of politics. \n' + 
+            'If you think this message is deleted incorrectly, contact the administrators. Thank you');
             badWordFlag = false;
         }
     });
