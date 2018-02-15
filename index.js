@@ -1,5 +1,9 @@
 const TeleBot = require('telebot');
-const bot = new TeleBot('547814548:AAHTmQHNMzDxNPGHb0q4Z2wsLI-eiavtbHY');
+
+let path = require('path');
+const config = require(path.join(__dirname, '/config/data'));
+
+const bot = new TeleBot(config.budugu.budugu);
 
 bot.on('text', (msg) => {
     budugu(msg);
@@ -13,7 +17,7 @@ bot.on('newChatMembers', (msg) => newChatMembers(msg));
 
 let budugu = (msg) => {
     if(msg.text.toLowerCase().includes('budugu')) {
-        msg.reply.text('thank you andi');
+        msg.reply.text(config.budugu.thanks);
     }
 };
 
@@ -22,6 +26,6 @@ let photo = (msg) => {
 };
 
 let newChatMembers = (msg) => {
-    msg.reply.text(msg.new_chat_members[0].first_name + ' గారు మనం - మన ఆస్ట్రేలియా తెలుగు సంఘం కి స్వాగతం. మీ గురించి వివరాలు మనం సభ్యులతో పంచుకుంటారా? \n \n' +
-     'Welcome '  + msg.new_chat_members[0].first_name + ' to MANAM - Mana Australia Telugu Association. Please share a small introduction about you to the group. You can find more information about MANAM at www.manam-au.org');
+    msg.reply.text(msg.new_chat_members[0].first_name + ' గారు ' + config.budugu.welcomeTelugu +
+     'Welcome '  + msg.new_chat_members[0].first_name + config.budugu.welcomeEnglish);
 };
