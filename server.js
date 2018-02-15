@@ -1,3 +1,3 @@
 require('./web');
-require('./index');
-require('./suryakantham');
+require('./bots/budugu');
+require('./bots/suryakantham');

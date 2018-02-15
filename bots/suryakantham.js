@@ -2,7 +2,7 @@
 const TeleBot = require('telebot');
 
 let path = require('path');
-const config = require(path.join(__dirname, '/config/data'));
+const config = require(path.join(__dirname, '../config/data'));
 
 const bot = new TeleBot(config.suryakantham.suryakantham);
 const bannedWords = config.suryakantham.bannedWords;
