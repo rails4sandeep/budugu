@@ -4,7 +4,10 @@ const TeleBot = require('telebot');
 let path = require('path');
 const config = require(path.join(__dirname, '../config/data'));
 
-const bot = new TeleBot(config.suryakantham.suryakantham);
+//const tokens = require(path.join(__dirname, '../config/tokens'));
+//const bot = new TeleBot(tokens.suryakantham);
+const bot = new TeleBot(process.env.TELEGRAM_TOKEN_SURYAKANTHAM);
+
 const bannedWords = config.suryakantham.bannedWords;
 const favoriteWords = config.suryakantham.favoriteWords;
 const visasAdwords = config.suryakantham.visasAdwords;

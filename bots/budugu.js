@@ -3,8 +3,9 @@ const TeleBot = require('telebot');
 let path = require('path');
 const config = require(path.join(__dirname, '../config/data'));
 
-const bot = new TeleBot(config.budugu.budugu);
-
+//const tokens = require(path.join(__dirname, '../config/tokens'));
+//const bot = new TeleBot(tokens.budugu);
+const bot = new TeleBot(process.env.TELEGRAM_TOKEN_BUDUGU);
 bot.on('text', (msg) => {
     budugu(msg);
 });
