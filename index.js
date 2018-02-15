@@ -22,5 +22,5 @@ let photo = (msg) => {
 };
 
 let newChatMembers = (msg) => {
-    msg.reply.text('Welcome '  + msg.new_chat_members[0].first_name + ' to MANAM - Mana Australia Telugu Association. Please share a small introduction about you to the group. You can find more information about MANAM at www.manam-au.org');
+    msg.reply.text(msg.new_chat_members[0].first_name + ' గారు మనం - మన ఆస్ట్రేలియా తెలుగు సంఘం కి స్వాగతం. మీ గురించి వివరాలు మనం సభ్యులతో పంచుకుంటారా? '+ 'Welcome '  + msg.new_chat_members[0].first_name + ' to MANAM - Mana Australia Telugu Association. Please share a small introduction about you to the group. You can find more information about MANAM at www.manam-au.org');
 };
