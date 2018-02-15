@@ -68,7 +68,7 @@ let apply4Study = (msg, visasAdwords) => {
     visasAdwords.forEach((visasAdword) => {
         if(msg.text.toLowerCase().includes(visasAdword) && visasAdwordsFlag) {
             msg.reply.text("MANAM suggests Apply4Study for all visas, study courses & permanent residency needs \n" + 
-        'Contact GD Singh +61 430 777 734, address: 2 Auburn Rd, Auburn NSW 2144, Website: http://apply4study.com.au/');
+        'Contact GD Singh +61 430 777 734, Address: 2 Auburn Rd, Auburn NSW 2144, Website: http://apply4study.com.au/');
             visasAdwordsFlag = false;            
         }
     });
