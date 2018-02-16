@@ -28,5 +28,5 @@ let photo = (msg) => {
 
 let newChatMembers = (msg) => {
     msg.reply.text(msg.new_chat_members[0].first_name + ' గారు ' + config.budugu.welcomeTelugu +
-     'Welcome '  + msg.new_chat_members[0].first_name + config.budugu.welcomeEnglish);
+     'Welcome '  + msg.new_chat_members[0].first_name + ' ' + config.budugu.welcomeEnglish);
 };
