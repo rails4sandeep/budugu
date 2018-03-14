@@ -28,7 +28,6 @@ bot.on('text', (msg) => {
     //reset flags
     goodWordFlag = true;
     badWordFlag = true;
-    badWordDeleteFlag = true;
     visasAdwordsFlag = true;
 });
 
