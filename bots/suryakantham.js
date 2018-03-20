@@ -78,7 +78,7 @@ let aboutMe = (msg) => {
 let apply4Study = (msg, visasAdwords) => {
     visasAdwords.forEach((visasAdword) => {
         if(msg.text.toLowerCase().includes(visasAdword) && visasAdwordsFlag) {
-            msg.reply.text(config.suryakantham.apply4Study);
+            msg.reply.text(config.suryakantham.apply4study);
             visasAdwordsFlag = false;            
         }
     });
