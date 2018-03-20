@@ -11,10 +11,12 @@ const bot = new TeleBot(process.env.TELEGRAM_TOKEN_SURYAKANTHAM);
 const bannedWords = config.suryakantham.bannedWords;
 const favoriteWords = config.suryakantham.favoriteWords;
 const visasAdwords = config.suryakantham.visasAdwords;
+const taxiWords = config.suryakantham.taxiWords;
 
 let goodWordFlag = true;
 let badWordFlag = true;
 let visasAdwordsFlag = true;
+let taxiWordsFlag = true;
 
 //bot responses
 bot.on('text', (msg) => {
@@ -84,3 +86,11 @@ let apply4Study = (msg, visasAdwords) => {
     });
 };
 
+let taxiAirport = (msg, taxiWords) => {
+  visasAdwords.forEach((taxiWord) => {
+    if(msg.text.toLowerCase().includes(taxiWord) && taxiWordsFlag) {
+      msg.reply.text(config.suryakantham.airportTaxi);
+      taxiWordsFlag = false;
+    }
+  });
+};
