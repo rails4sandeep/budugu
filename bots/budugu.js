@@ -10,7 +10,7 @@ bot.on('text', (msg) => {
     budugu(msg);
 });
 
-bot.on('photo', (msg) => photo(msg));
+//bot.on('photo', (msg) => photo(msg));
 
 bot.start();
 
