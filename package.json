@@ -15,8 +15,8 @@
   "author": "Sandeep Kumar Uppuluri <rails4sandeep@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2",
-    "telebot": "^1.2.3"
+    "express": "^4.16.4",
+    "telebot": "^1.2.6"
   },
   "engines": {
     "node": "8.9.0"
